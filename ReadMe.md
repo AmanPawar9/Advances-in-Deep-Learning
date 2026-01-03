@@ -51,14 +51,17 @@ jupyter notebook
 
 ## Repository structure
 
-- `chapter-1.ipynb` — `chapter-13.ipynb`: Example notebooks for Chapters 1–13
-- `ReadMe.md`: This file
+- `Main_Chapters/` — Core chapter notebooks (`chapter-1.ipynb` … `chapter-13.ipynb`)
+- `Bridge_Chapters/` — Supplemental "bridge" notebooks with short, focused examples (`Bridge-chapter-0.ipynb` … `Bridge-chapter-4.ipynb`)
+- `ReadMe.md` — This file
 
 ---
 
 ## Notebook index (quick reference)
 
-Below is a short index of the notebook files. Each notebook contains runnable code and short explanations aligned with the corresponding chapter in the book.
+Below is a short index of the notebook files grouped by directory. Each entry is a one-line summary of the notebook contents.
+
+### Main_Chapters
 
 - `chapter-1.ipynb` — Toy SSM duality (ToyMambaSSD): demonstrates the equivalence between a scalar state-space model implemented as a recurrent process and as a lower-triangular attention/matrix multiplication, and numerically verifies their outputs.
 - `chapter-2.ipynb` — Mixture-of-Experts router: a simple top-k gating/router example that computes router logits, selects top-k experts, and re-normalizes routing weights.
@@ -73,5 +76,16 @@ Below is a short index of the notebook files. Each notebook contains runnable co
 - `chapter-11.ipynb` — Agent S (planner + actor + retrieval): mock filesystem example that illustrates retrieval, high-level planning, and low-level action execution in a simple task loop.
 - `chapter-12.ipynb` — Grokking experiment (modular addition): trains an embedding-based model to learn (a + b) mod P and illustrates the memorization → generalization phase transition (grokking).
 - `chapter-13.ipynb` — Feature geometry & Simplex ETF: trains a small classifier and analyzes class-means in feature space to check for Simplex Equiangular Tight Frame geometry.
+
+### Bridge_Chapters
+
+- `Bridge-chapter-0.ipynb` — XOR toy: trains a tiny MLP on the XOR problem to demonstrate non-linearity and simple training loop.
+- `Bridge-chapter-1.ipynb` — Memory vs Matrix: compares storing low-rank factors vs materialized attention matrix and shows memory & rank implications.
+- `Bridge-chapter-2.ipynb` — REINFORCE coin flip: minimal REINFORCE example that learns a Bernoulli policy to favor 'Heads'.
+- `Bridge-chapter-3.ipynb` — Adaptive compute simulation: demonstrates allocating more search/compute to high-entropy (uncertain) predictions.
+- `Bridge-chapter-4.ipynb` — Best-first search simulation: simple best-first (value-guided) graph search example that finds a path from Start to Goal.
+
+---
+
 
 
