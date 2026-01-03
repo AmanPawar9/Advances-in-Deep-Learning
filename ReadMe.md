@@ -60,18 +60,18 @@ jupyter notebook
 
 Below is a short index of the notebook files. Each notebook contains runnable code and short explanations aligned with the corresponding chapter in the book.
 
-- `chapter-1.ipynb` — Introduction, notation, and setup examples
-- `chapter-2.ipynb` — Supervised learning basics and small-scale experiments
-- `chapter-3.ipynb` — Neural network fundamentals and training loops
-- `chapter-4.ipynb` — Optimization methods and practical tips
-- `chapter-5.ipynb` — Regularization and generalization experiments
-- `chapter-6.ipynb` — Convolutional architectures and image tasks
-- `chapter-7.ipynb` — Sequence models and recurrent networks
-- `chapter-8.ipynb` — Attention mechanisms and transformers
-- `chapter-9.ipynb` — Generative models and VAEs/GANs
-- `chapter-10.ipynb` — Reinforcement learning basics & experiments
-- `chapter-11.ipynb` — Scaling up models and distributed training notes
-- `chapter-12.ipynb` — Advanced optimization, second-order methods
-- `chapter-13.ipynb` — Case studies, reproducibility, and research pointers
+- `chapter-1.ipynb` — Toy SSM duality (ToyMambaSSD): demonstrates the equivalence between a scalar state-space model implemented as a recurrent process and as a lower-triangular attention/matrix multiplication, and numerically verifies their outputs.
+- `chapter-2.ipynb` — Mixture-of-Experts router: a simple top-k gating/router example that computes router logits, selects top-k experts, and re-normalizes routing weights.
+- `chapter-3.ipynb` — Search strategies for reasoning: simulation comparing Greedy (one-shot), Best-of-N, and Tree-Search strategies under constrained compute budgets.
+- `chapter-4.ipynb` — Learning internal "thoughts": `ThinkingModel` that samples internal latent 'thoughts' and trains them with a REINFORCE-style signal to improve supervised predictions.
+- `chapter-5.ipynb` — Outcome vs Process search (ORM vs PAV): toy environment showing a random outcome-reward search vs a value-based process verifier that looks ahead using an explicit value function.
+- `chapter-6.ipynb` — Flow matching (vector field learning): trains a neural vector field to map Gaussian noise to a target "moons" distribution and generates samples via Euler integration.
+- `chapter-7.ipynb` — Rectified Flow & distillation: demonstrates 1-rectified and 2-rectified flow training, including reflowing generated pairs and distillation between flows.
+- `chapter-8.ipynb` — JEPA-like context encoder & predictor: compresses frames (sine-wave pixel grid) into latents and trains a predictor in latent space to model next-frame dynamics.
+- `chapter-9.ipynb` — Conditional flow matching & trajectory generation: trains a velocity field to move noise toward a target distribution and visualizes the generated ODE trajectory.
+- `chapter-10.ipynb` — VAR pyramid & coarse-to-fine image generation: simulates multi-scale autoregressive generation by constructing a pyramid of scales from a synthetic image and visualizing predicted scales.
+- `chapter-11.ipynb` — Agent S (planner + actor + retrieval): mock filesystem example that illustrates retrieval, high-level planning, and low-level action execution in a simple task loop.
+- `chapter-12.ipynb` — Grokking experiment (modular addition): trains an embedding-based model to learn (a + b) mod P and illustrates the memorization → generalization phase transition (grokking).
+- `chapter-13.ipynb` — Feature geometry & Simplex ETF: trains a small classifier and analyzes class-means in feature space to check for Simplex Equiangular Tight Frame geometry.
 
 
